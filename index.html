@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
 </head>
+<script>
+    let tasks = [];
+
+function addTask() {
+  const input = document.getElementById("taskInput");
+  const text = input.value.trim();
+  if (!text) return;
+
+  tasks.push({ text, done: false });
+  input.value = "";
+ 
+}
+</script>
 <body>
     <div class="container">
     <h2>TodoInput</h2>
     <div class="input-area">
       <input id="taskInput" type="text" placeholder="Enter task..." />
-      <button >Add new task</button>
+      <button onclick="addTask()" >Add new task</button>
       <div class="progress-bar"></div>
     </div>
 </body>
