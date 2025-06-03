@@ -28,6 +28,7 @@ function renderTasks(filter = "all") {
     if (filter === "todo") return !task.done;
   });
 }
+
 </script>
 <body>
     <div class="container">
@@ -43,5 +44,12 @@ function renderTasks(filter = "all") {
       <button onclick="filterTasks('done')">Done</button>
       <button onclick="filterTasks('todo')">Todo</button>
     </div>
+     <ul id="taskList"></ul>
+
+    <div class="actions">
+      <button onclick="deleteDoneTasks()" class="btn-small">Delete Done Tasks</button>
+      <button onclick="deleteAllTasks()" class="btn-large">Delete All Tasks</button>
+    </div>
+  </div>
 </body>
 </html>
