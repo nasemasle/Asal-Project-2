@@ -27,7 +27,35 @@ function renderTasks(filter = "all") {
     if (filter === "done") return task.done;
     if (filter === "todo") return !task.done;
   });
+     filtered.forEach((task, index) => {
+    const li = document.createElement("li");
+    li.className = `task-item ${task.done ? "done" : ""}`;
+
+    const textSpan = document.createElement("span");
+    textSpan.className = "text";
+    textSpan.innerText = task.text;
+
+    const icons = document.createElement("div");
+    icons.className = "icons";
+
+    const check = document.createElement("i");
+    check.className = "fas fa-check";
+    check.onclick = () => toggleDone(index);
+
+    const edit = document.createElement("i");
+    edit.className = "fas fa-edit";
+    edit.onclick = () => editTask(index);
+
+    const del = document.createElement("i");
+    del.className = "fas fa-trash";
+    del.onclick = () => deleteTask(index);
+
+    icons.append(check, edit, del);
+    li.append(textSpan, icons);
+    list.appendChild(li);
+  });
 }
+
 </script>
 <body>
     <div class="container">
@@ -43,5 +71,12 @@ function renderTasks(filter = "all") {
       <button onclick="filterTasks('done')">Done</button>
       <button onclick="filterTasks('todo')">Todo</button>
     </div>
+     <ul id="taskList"></ul>
+
+    <div class="actions">
+      <button onclick="deleteDoneTasks()" class="btn-small">Delete Done Tasks</button>
+      <button onclick="deleteAllTasks()" class="btn-large">Delete All Tasks</button>
+    </div>
+  </div>
 </body>
 </html>
