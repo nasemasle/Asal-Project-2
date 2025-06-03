@@ -16,7 +16,17 @@ function addTask() {
 
   tasks.push({ text, done: false });
   input.value = "";
- 
+ renderTasks();
+}
+function renderTasks(filter = "all") {
+  const list = document.getElementById("taskList");
+  list.innerHTML = "";
+
+  const filtered = tasks.filter(task => {
+    if (filter === "all") return true;
+    if (filter === "done") return task.done;
+    if (filter === "todo") return !task.done;
+  });
 }
 
 </script>
