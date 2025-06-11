@@ -71,7 +71,10 @@ function editTask(index) {
     renderTasks(currentFilter);
   }
 }
-
+function deleteDoneTasks() {
+  tasks = tasks.filter(task => !task.done);
+  renderTasks(currentFilter);
+}
 </script>
 <body>
     <div class="container">
