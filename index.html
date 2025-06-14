@@ -75,6 +75,10 @@ function deleteDoneTasks() {
   tasks = tasks.filter(task => !task.done);
   renderTasks(currentFilter);
 }
+function deleteAllTasks() {
+  tasks = [];
+  renderTasks(currentFilter);
+}
 </script>
 <body>
     <div class="container">
