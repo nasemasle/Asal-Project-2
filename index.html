@@ -79,6 +79,11 @@ function deleteAllTasks() {
   tasks = [];
   renderTasks(currentFilter);
 }
+let currentFilter = "all";
+function filterTasks(filter) {
+  currentFilter = filter;
+  renderTasks(filter);
+}
 
 </script>
 <body>
