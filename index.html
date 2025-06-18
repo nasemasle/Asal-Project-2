@@ -84,7 +84,7 @@ function filterTasks(filter) {
   currentFilter = filter;
   renderTasks(filter);
 }
-
+window.onload = () => renderTasks();
 </script>
 <body>
     <div class="container">
