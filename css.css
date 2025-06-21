@@ -4,3 +4,11 @@ body {
   padding: 5vh;
   margin: 0;
 }
+.container {
+  max-width: 90vw;
+  margin: auto;
+  background: white;
+  padding: 5vw;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
