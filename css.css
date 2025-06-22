@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 5vh;
+  margin: 0;
+}
+.container {
+  max-width: 90vw;
+  margin: auto;
+  background: white;
+  padding: 5vw;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.input-area {
+  position: relative;
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  margin-bottom: 2vh;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  min-width: 60%;
+}
+
+button {
+  padding: 0.9rem 1.5rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
