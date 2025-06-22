@@ -50,3 +50,16 @@ button:hover {
   width: 50%;
   border-radius: 0.5rem;
 }
+.tabs {
+  margin: 3vh 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabs button {
+  flex: 1;
+  background: #007bff;
+  margin: 0 0.5vw;
+  color: white;
+  border-radius: 0.4rem;
+}
