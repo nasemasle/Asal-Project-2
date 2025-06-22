@@ -88,3 +88,10 @@ button:hover {
   cursor: pointer;
   font-size: 1.1rem;
 }
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
