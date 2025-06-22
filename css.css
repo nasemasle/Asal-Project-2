@@ -41,3 +41,12 @@ button {
 button:hover {
   opacity: 0.9;
 }
+.progress-bar {
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  height: 0.6rem;
+  background-color: #00bcd4;
+  width: 50%;
+  border-radius: 0.5rem;
+}
