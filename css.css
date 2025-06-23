@@ -95,3 +95,7 @@ button:hover {
   flex-wrap: wrap;
   gap: 1rem;
 }
+.btn-small {
+  background-color: #f44336;
+  flex: 1;
+}
