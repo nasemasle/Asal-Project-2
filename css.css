@@ -103,6 +103,7 @@ button:hover {
   background-color: #e53935;
   flex: 2;
 }
+
 @media (max-width: 400px) {
   .container {
     padding: 6vw;
