@@ -99,3 +99,7 @@ button:hover {
   background-color: #f44336;
   flex: 1;
 }
+.btn-large {
+  background-color: #e53935;
+  flex: 2;
+}
