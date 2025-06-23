@@ -109,4 +109,8 @@ button:hover {
     padding: 6vw;
     width: 95vw;
   }
+    input[type="text"] {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
