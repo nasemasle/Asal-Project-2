@@ -128,4 +128,11 @@ button:hover {
   } .tabs button {
     width: 100%;
   }
+    .actions {
+    flex-direction: column;
+  }
+
+  .icons i {
+    margin-left: 0.6rem;
+  }
 }
