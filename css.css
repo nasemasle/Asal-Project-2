@@ -121,4 +121,8 @@ button:hover {
     width: 100%;
     font-size: 0.95rem;
   }
+    .tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
