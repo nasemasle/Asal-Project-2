@@ -135,4 +135,12 @@ button:hover {
   .icons i {
     margin-left: 0.6rem;
   }
+    .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-item .text {
+    margin-bottom: 0.5rem;
+  }
 }
