@@ -71,7 +71,19 @@ function editTask(index) {
     renderTasks(currentFilter);
   }
 }
-
+function deleteDoneTasks() {
+  tasks = tasks.filter(task => !task.done);
+  renderTasks(currentFilter);
+}
+function deleteAllTasks() {
+  tasks = [];
+  renderTasks(currentFilter);
+}
+let currentFilter = "all";
+function filterTasks(filter) {
+  currentFilter = filter;
+  renderTasks(filter);
+}
 </script>
 <body>
     <div class="container">
